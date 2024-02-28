@@ -1,0 +1,146 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %} Home {% endblock title %}
+
+{% block banner-slider %}
+
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/b1.jpg' %}" class="d-block w-100" alt="banner">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b2.jpg' %}" class="d-block w-100" alt="banner">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b3.jpg' %}" class="d-block w-100" alt="banner">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b4.jpg' %}" class="d-block w-100" alt="banner">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+       
+{% endblock banner-slider %}
+
+{% block information %}
+<nav class="navbar navbar-expand-lg navbar-light ">
+   <div class="row  text-center p-5 text-white ">
+    <h1>Products</h1>
+    <small= class="fs-5">
+        Delightfully rich, smooth and delicious chocolate with melt-in-the-mouth texture. Cadbury stands for goodness and a moment of pure magic. Hurry up! Order now to experience the luscious taste of the classic Cadbury Dairy Milk Chocolate.
+    </small>
+  </div> 
+</nav>
+{% endblock information %}
+
+{% block main-content %}
+  <div class="container">
+    <h2 class="text-center">Food products</h2>
+     </br></br>
+    <div class="row container"> 
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+       data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+       <div class="goodnesssec chocolate buttermilk">
+         <a href="{% url 'category' 'CH' %}">
+             <div class="goodnessseccont text-center">
+                 <img src="{% static 'app/images/product/chocolate.png' %}" class="img-responsive center-block" alt=""> 
+                 <p class="mlkpro">Chocolate</p>
+             </div>
+          </a>   
+       </div>
+      </div>
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+       data-wow-delay="0.6s" style="animation-duration:1s; animation-delay: 0.6s; animation-name: none;">
+       <div class="goodnesssec milk curdbgpros">
+         <a href="{% url 'category' 'ML' %}">
+             <div class="goodnessseccont text-center">
+                 <img src="{% static 'app/images/product/milk.png' %}" class="img-responsive center-block" alt=""> 
+                 <p class="mlkpro">Milk</p>
+             </div>
+          </a>
+       </div>
+      </div> 
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+       data-wow-delay="0.6s" style="animation-duration:1s; animation-delay: 0.6s; animation-name: none;">
+       <div class="goodnesssec sweet buttermilk">
+         <a href="{% url 'category' 'SW' %}">
+             <div class="goodnessseccont text-center">
+                 <img src="{% static 'app/images/product/laddu1.png' %}" class="img-responsive center-block" alt=""> 
+                 <p class="mlkpro">Sweet</p>
+             </div>
+          </a>    
+       </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="row container"> 
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+       data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+       <div class="goodnesssec milk curdbgpros ">
+         <a href="{% url 'category' 'CA' %}">
+             <div class="goodnessseccont text-center">
+                 <img src="{% static 'app/images/product/cake.png' %}" class="img-responsive center-block" alt=""> 
+                 <p class="mlkpro">Cake</p>
+             </div>
+          </a>   
+       </div>
+      </div>
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+       data-wow-delay="0.6s" style="animation-duration:1s; animation-delay: 0.6s; animation-name: none;">
+       <div class="goodnesssec milk ">
+         <a href="{% url 'category' 'IC' %}">
+             <div class="goodnessseccont text-center">
+                 <img src="{% static 'app/images/product/ice-cream.png' %}" class="img-responsive center-block" alt=""> 
+                 <p class="mlkpro">Ice-cream</p>
+             </div>
+          </a>
+       </div>
+      </div> 
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+       data-wow-delay="0.6s" style="animation-duration:1s; animation-delay: 0.6s; animation-name: none;">
+       <div class="goodnesssec milk buttermilk">
+         <a href="{% url 'category' 'JU' %}">
+             <div class="goodnessseccont text-center">
+                 <img src="{% static 'app/images/product/juice.png' %}" class="img-responsive center-block" alt=""> 
+                 <p class="mlkpro">Juice</p>
+             </div>
+          </a>    
+       </div>
+      </div>
+      <br><br>
+    <div class="row container"> 
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+       data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+       <div class="goodnesssec milk curdbgpros ">
+         <a href="{% url 'category' 'BA' %}">
+             <div class="goodnessseccont text-center">
+                 <img src="{% static 'app/images/product/babyfood.png' %}" class="img-responsive center-block" alt=""> 
+                 <p class="mlkpro">Baby-Food</p>
+             </div>
+          </a>   
+       </div>
+      </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+         data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+         <div class="goodnesssec milk curdbgpros ">
+           <a href="{% url 'category' 'BI' %}">
+               <div class="goodnessseccont text-center">
+                   <img src="{% static 'app/images/product/biscuit.png' %}" class="img-responsive center-block" alt=""> 
+                   <p class="mlkpro">Biscuit</p>
+               </div>
+            </a>   
+         </div>
+        </div>
+    </div>
+  </div>
+</br></br><br>
+{% endblock main-content %}
